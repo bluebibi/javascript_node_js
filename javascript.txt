@@ -34,8 +34,8 @@ var undefinedVar;
 //null
 var nullVar = null;
 
-console.log(type intNum, type floatNum, type singleQuoteStr, type doubleQuoteStr, type boolVar, type undefinedVar, type nullVar);
-//output: number 
+console.log(typeof intNum, typeof floatNum, typeof singleQuoteStr, typeof doubleQuoteStr, typeof boolVar, typeof undefinedVar, typeof nullVar);
+//output: number  
 </pre>
 
 #### 2. number
@@ -45,5 +45,8 @@ console.log(type intNum, type floatNum, type singleQuoteStr, type doubleQuoteStr
 <pre class="lang:js decode:true " >
 var num = 5 / 2;
 console.log(num);
+console.log(typeof num); 
 console.log(Math.floor(num));
 </pre>
+
+#### 3.
