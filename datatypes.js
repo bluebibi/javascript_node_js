@@ -15,4 +15,4 @@ var undefinedVar;
 //null
 var nullVar = null;
 
-console.log(typeof intNum, typeof floatNum, typeof singleQuoteStr, typeof doubleQuoteStr, typeof boolVar, typeof undefinedVar, typeof nullVar);
+console.log(typeof intNum, typeof floatNum, typeof singleQuoteStr, typeof doubleQuoteStr, typeof boolVar, typeof undefinedVar, typeof nullVar); 
