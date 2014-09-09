@@ -1,0 +1,49 @@
+Javascript Datatypes 
+====
+
+# Javascript Datatypes
+
+### 1. Datatypes
+- Basic Datatypes 
+  - number
+  - string
+  - boolean
+  - undefined
+  - null
+- Reference Datatypes
+  - object
+  - array
+  - function
+  - regexp
+  
+<pre class="lang:js decode:true " >
+//number
+var intNum = 10;
+var floatNum = 0.1;
+
+//string
+var singleQuoteStr = 'single quote string';
+var doubleQuoteStr = "single quote string";
+
+//boolean
+var boolVar = true;
+
+//undefined
+var undefinedVar;
+
+//null
+var nullVar = null;
+
+console.log(type intNum, type floatNum, type singleQuoteStr, type doubleQuoteStr, type boolVar, type undefinedVar, type nullVar);
+//output: number 
+</pre>
+
+#### 2. number
+
+- For numbers (e.g., int, long, float, double), there is only one datatype, number, in Javascript. 
+
+<pre class="lang:js decode:true " >
+var num = 5 / 2;
+console.log(num);
+console.log(Math.floor(num));
+</pre>
