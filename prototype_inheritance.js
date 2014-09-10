@@ -1,15 +1,41 @@
-var foo = {
-	name : "James Kim",
-	age : 30
-}
+var Person = function() {
+  this.canTalk = true;
+  this.greet = function() {
+    if (this.canTalk) {
+      console.log("Hi, I'm " + this.name);
+    }
+  };
+};
 
-console.log(foo);
-console.log(foo.toString());
-console.dir(foo);
-console.log(foo.__proto__);
-console.log(foo.__proto__.toString());
-console.log();
-console.log(Object.prototype);
-console.log(Array.prototype);
-console.log();
-console.log(foo.__proto__ == Object.prototype);
+var Employee = function(name, title) {
+  this.name = name;
+  this.title = title;
+  this.greet = function() {
+    if (this.canTalk) {
+      console.log("Hi, I'm " + this.name + ", the " + this.title);
+    }
+  };
+};
+Employee.prototype = new Person();
+
+var Customer = function(name) {
+  this.name = name;
+};
+Customer.prototype = new Person();
+
+var Mime = function(name) {
+  this.name = name;
+  this.canTalk = false;
+};
+Mime.prototype = new Person();
+
+var bob = new Employee('Bob', 'Builder');
+var joe = new Customer('Joe');
+var rg = new Employee('Red Green', 'Handyman');
+var mike = new Customer('Mike');
+var mime = new Mime('Mime');
+bob.greet();
+joe.greet();
+rg.greet();
+mike.greet();
+mime.greet();
